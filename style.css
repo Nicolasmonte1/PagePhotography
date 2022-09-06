@@ -8,6 +8,7 @@ body{
 	background-color: #fff;
 }
 
+
 /*HOME PAGE*/
 
 .navbar{
@@ -275,6 +276,58 @@ nav ul{
 	font-weight: normal;
 }
 
+@media (max-width: 768px) {
+
+.caja{
+	overflow: hidden;
+	width: 100%;
+	padding: 20px;
+	background-color: #1a1a1a;
+	display: grid;
+	grid-template-areas: 
+	"img1"
+	"textbox1"
+	"img2"
+	"textbox2"
+	"img3"
+	"textbox3"
+	"img4"
+	"textbox4"
+	"img5"
+	"textbox5"
+	"img6"
+	"textbox6";
+	
+}
+
+.img1{grid-area: img1;}
+.img2{grid-area: img2;}
+.img3{grid-area: img3;}
+.img4{grid-area: img4;}
+.img5{grid-area: img5;}
+.img6{grid-area: img6;}
+.textbox1{grid-area: textbox1}
+.textbox2{grid-area: textbox2}
+.textbox3{grid-area: textbox3}
+.textbox4{grid-area: textbox4}
+.textbox5{grid-area: textbox5}
+.textbox6{grid-area: textbox6}
+
+
+
+.textbox1, .textbox2, .textbox3, .textbox4, .textbox5, .textbox6 {
+	width: 300px;
+	height: 80px;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6{
+	width: 100%;
+	height: 250px;
+	border-radius: 10px;
+	box-shadow: 1px -1px 15px -4px rgba(0,0,0,0.1);
+	overflow: hidden;
+}
+}
 
 /*PRESET PAGE*/
 
