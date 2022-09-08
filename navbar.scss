@@ -1,0 +1,59 @@
+.navbar{
+	font-size: 14px;
+	background-color: $colornegro;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	height: 80px;
+	padding: 0 5px;
+	line-height: 80px;
+
+}
+
+.text-logo{
+	color: $colorblanco;
+	text-decoration: none;
+	font-size: 26px;
+	font-weight: bold;
+	justify-content: flex-start;
+}
+
+
+.nodeco{	
+	text-decoration: none;
+}
+
+ul li a{
+	color: $colorblanco;
+	margin: 0 20px;
+	text-transform: uppercase;
+}
+
+nav ul{
+	display: flex;
+	list-style-type: none;
+	margin-right: 25px;
+	
+}
+
+.navlink{
+	padding: 8px 12px;
+	border-radius: 4px;
+
+    &:hover{
+	background-color: $colorverde;
+	transition: 0.5s;
+    }
+}
+
+.nav-logo{
+	width: 150px;
+	height: 70px;
+	margin: 5px 0px;
+}
+
+.nav-logo-max{
+	max-height: 100%;
+	max-width: 100%;
+}
