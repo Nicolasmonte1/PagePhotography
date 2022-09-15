@@ -1,19 +1,28 @@
+$sizetitles:(
+
+	title1: 30px,
+	title2: 14px,
+	title3: 12px,
+
+	);
+
+@each $size, $titles in $sizetitles{
+
+	.#{$size}{
+		font-size: $titles;
+	}
+}
+
 .title1{
 	font-weight: bold;
-	font-size: 30px;
-
 }
 
 .title2{
-	font-weight: bold;
-	font-size: 14px;
-	
+	font-weight: bold;	
 }
 
 .title3{
-	font-size: 12px;
-	margin-top: 40px;
-	
+	margin-top: 40px;	
 }
 
 .footer{
@@ -52,6 +61,5 @@
 }
 
 .tamaño-max{
-	max-height: 100%;
-	max-width: 100%;
+	@extend.footer-logo-max;
 }

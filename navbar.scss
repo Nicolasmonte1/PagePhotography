@@ -47,9 +47,14 @@ nav ul{
     }
 }
 
+@mixin tamaños ($width, $height){
+	height: $height;
+	width: $width;
+
+}
+
 .nav-logo{
-	width: 150px;
-	height: 70px;
+	@include tamaños(150px, 70px);
 	margin: 5px 0px;
 }
 
