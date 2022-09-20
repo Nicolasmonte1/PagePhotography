@@ -15,13 +15,12 @@ body{
 	font-size: 14px;
 	background-color: #000;
 	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
 	height: 80px;
 	padding: 0 5px;
 	line-height: 80px;
-
+    display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
 }
 
 .text-logo{
@@ -68,15 +67,13 @@ body{
 
 ul li a{
 	color: #fff;
-	margin: 0 20px;
+	margin: 0 10px;
 	text-transform: uppercase;
 }
 
 nav ul{
 	display: flex;
 	list-style-type: none;
-	margin-right: 25px;
-	
 }
 
 .navlink{
@@ -169,6 +166,33 @@ nav ul{
 .position-title{
 	display: flex;
 	justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+
+.navbar{
+	font-size: 14px;
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 0 30px;
+}
+
+nav ul{
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	
+}
+
+ul li a{
+	color: #fff;
+	text-transform: uppercase;
+}
+
+
 }
 
 
@@ -323,9 +347,10 @@ nav ul{
 .img1, .img2, .img3, .img4, .img5, .img6{
 	width: 100%;
 	height: 250px;
+	object-fit: cover;
 	border-radius: 10px;
 	box-shadow: 1px -1px 15px -4px rgba(0,0,0,0.1);
-	overflow: hidden;
+
 }
 }
 
@@ -334,6 +359,7 @@ nav ul{
 
 .cajapreset{
 	overflow: hidden;
+	object-fit: contain;
 	width: 100%;
 	padding: 60px;
 	background-color: #1a1a1a;
@@ -432,8 +458,9 @@ nav ul{
 }
 
 .cajaimg{
-	width: 768px;
-	height: 432px;
+	width: 100%;
+	height: 400px;
+    object-fit: cover;
 	cursor: pointer;
 	box-shadow: -1px -1px 45px -14px rgba(0,0,0,0.79);
 	border-radius: 50px;
@@ -442,7 +469,7 @@ nav ul{
 .cajaimg div{
 	position: absolute;
 	width: 100%;
-	height: 100%;
+    height: 100%;
 }
 
 
@@ -450,6 +477,47 @@ nav ul{
 .imgpreset2{grid-area: imgpreset2;}
 .textbox1-presets{grid-area: textbox1;}
 .textbox2-presets{grid-area: textbox2;}
+
+@media (max-width: 768px) {
+
+.cajapreset{
+	overflow: hidden;
+	object-fit: contain;
+	width: 100%;
+	padding: 60px;
+	background-color: #1a1a1a;
+	display: grid;
+
+    grid-template-columns: 100%;
+    grid-template-areas:
+	"imgpreset1"
+	"textbox1"
+	"imgpreset2"
+	"textbox2";
+  }
+	
+}
+
+.imgpreset1{grid-area: imgpreset1;}
+.imgpreset2{grid-area: imgpreset2;}
+.textbox1-presets{grid-area: textbox1;}
+.textbox2-presets{grid-area: textbox2;}
+
+.textbox1-presets{
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+	justify-self: start;
+ 
+}
+.textbox2-presets{
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+	justify-self: start;
+	text-align: left;
+	
+}
 
 
 /*CONTACTO PAGE*/
@@ -465,8 +533,9 @@ nav ul{
 	color: #fff;
 	padding: 30px;
 	width: 100%;
-	display: grid;
-	justify-self: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
 }
 
 .box-contacto{
@@ -513,4 +582,21 @@ nav ul{
 .box-contacto form button:hover{
 	background: #b4ddd1;
 	transition: background-color 0.5s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+
+.main-contacto{
+	background-color: #1a1a1a;
+	color: #fff;
+	padding: 30px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+
+
 }
